@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Let's play!</title>
+
+    <!--        GOOGLE FONTS    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--        STYLESHEET    -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Rock ~ Paper ~ Scissors ~ Lizard ~ Spock</h1>
+      <div class="header__rules">
+        <img
+          class="rules__pic"
+          src="./images/game.svg"
+          alt="game rules"
+        />
+
+        <ul class="rules__text">
+          RULES
+          <li class="rules__element"><a href=#>Paper covers Rock</a></li>
+          <li class="rules__element"><a href=#>Scissors cuts Paper</a></li>
+          <li class="rules__element"><a href=#>Rock crushes Lizard</a></li>
+          <li class="rules__element"><a href=#>Lizard poisons Spock</a></li>
+          <li class="rules__element"><a href=#>Spock smashes Scissors</a></li>
+          <li class="rules__element"><a href=#>Scissors decapitates Lizard</a></li>
+          <li class="rules__element"><a href=#>Lizard eats Paper</a></li>
+          <li class="rules__element"><a href=#>Paper disproves Spock</a></li>
+          <li class="rules__element"><a href=#>Spock vaporizes Rock</a></li>
+          <li class="rules__element"><a href=#>Rock crushes Scissors</a></li>
+          <a
+            class="link"
+            href="https://www.youtube.com/watch?v=405Nh2H4Ucg"
+            target="”_blank”"
+            >(Rules by Sheldon Cooper)</a
+          >
+        </ul>
+      </div>
+    </header>
+    
+    <main class="main">
+
+      <div class="score-board">
+        <div id="user-label" class="badge">player</div>
+        <div id="computer-label" class="badge">machine</div>
+        <span class="score" id="user-score">0</span>*<span class="score" id="computer-score">0</span>
+      </div>
+
+      <div class="result"><p>Paper covers rock. You win!</p></div>
+
+      <div class="choices">
+        <div class="choice" id="r">
+          <img class="hand" src="./images/rock.svg" alt="rock" />
+        </div>
+        <div class="choice" id="p">
+          <img class="hand" src="./images/paper.svg" alt="paper" />
+        </div>
+        <div class="choice" id="s">
+          <img class="hand" src="./images/scissors.svg" alt="scissors" />
+        </div>
+        <div class="choice" id="l">
+          <img class="hand" src="./images/lizard.svg" alt="lizard" />
+        </div>
+        <div class="choice" id="k">
+          <img class="hand" src="./images/spock.svg" alt="spock" />
+        </div>
+      </div>
+
+      <h3 id="action-message">Make your move!</h3>
+    </main>
+
+    <script type=”text/javascript” src="./js/main.js"></script>
+  </body>
+</html>
