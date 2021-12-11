@@ -158,14 +158,8 @@
 .choice:hover {
   cursor: pointer;
   border-radius: 20%;
-  border: 3px solid var(--stColor);
+  border: 3px solid var(--rdColor);
 }
-@media all and (min-width: 768px) {
-  .choice {
-    
-  }
-}
-
 .hand {
   height: 50px;
 }
