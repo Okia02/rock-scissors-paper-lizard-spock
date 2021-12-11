@@ -1,17 +1,16 @@
 "use strict";
-console.log('hola');
 
 let userScore = 0;
 let computerScore = 0;
 const userScore_span = document.getElementById("user-score");
 const computerScore_span = document.getElementById("computer-score");
-const scoreBoard_div = document.querySelector(".socre-board");
-const result_p = documen.querySelector(".result > p");
-const rock_div = docum.getElementById("r");
-const paper_div = docum.getElementById("p");
-const scissors_div = docum.getElementById("s");
-const lizard_div = docum.getElementById("l");
-const spock_div = docum.getElementById("k");
+const scoreBoard_div = document.querySelector(".score-board");
+const result_p = document.querySelector(".result > p");
+const rock_div = document.getElementById("r");
+const paper_div = document.getElementById("p");
+const scissors_div = document.getElementById("s");
+const lizard_div = document.getElementById("l");
+const spock_div = document.getElementById("k");
 
 function getComputerChoice() {
   const choices = ["r", "p", "s", "l", "k"];
@@ -31,29 +30,24 @@ function win(userChoice, computerChoice) {
   userScore++;
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
-  const myChoice = text.fontcolor($ndColor);
-  const compChoice = text.fontcolor($rdColor);
   result_p.innerHTML = `${convertToWord(
     userChoice
-  )}${myChoice} beats ${convertToWord(computerChoice)}${compChoice}. Your win!`;
+  )} beats ${convertToWord(computerChoice)}. You win &#127881`;
 }
 
 function lose(userChoice, computerChoice) {
   computerScore++;
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
-  const myChoice = text.fontcolor($ndColor);
-  const compChoice = text.fontcolor($rdColor);
   result_p.innerHTML = `${convertToWord(
     userChoice
-  )}${myChoice} loses to ${convertToWord(computerChoice)}${compChoice}. Your lost...`;
+  )} loses to ${convertToWord(computerChoice)}. You lost... &#128128`;
 }
 function draw(userChoice, computerChoice) {  
-  const myChoice = text.fontcolor($ndColor);
-  const compChoice = text.fontcolor($rdColor);
+  
   result_p.innerHTML = `${convertToWord(
     userChoice
-  )}${myChoice} equals ${convertToWord(computerChoice)}${compChoice}. It's a draw!`;
+  )} equals ${convertToWord(computerChoice)}. It's a draw &#128581`;
 }
 
 function game(userChoice) {
