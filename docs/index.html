@@ -1,68 +1,85 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Let's play!</title>
+
+    <!--        GOOGLE FONTS    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--        STYLESHEET    -->
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
   </head>
-
   <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
+    <header class="header">
+      <h1 class="header__title">Rock ~ Paper ~ Scissors ~ Lizard ~ Spock</h1>
+      <div class="header__rules">
+        <img
+          class="rules__pic"
+          src="./assets/images/game.svg"
+          alt="game rules"
+        />
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
+        <ul class="rules__text">
+          RULES
+          <li class="rules__element"><a href=#>Paper covers Rock</a></li>
+          <li class="rules__element"><a href=#>Scissors cuts Paper</a></li>
+          <li class="rules__element"><a href=#>Rock crushes Lizard</a></li>
+          <li class="rules__element"><a href=#>Lizard poisons Spock</a></li>
+          <li class="rules__element"><a href=#>Spock smashes Scissors</a></li>
+          <li class="rules__element"><a href=#>Scissors decapitates Lizard</a></li>
+          <li class="rules__element"><a href=#>Lizard eats Paper</a></li>
+          <li class="rules__element"><a href=#>Paper disproves Spock</a></li>
+          <li class="rules__element"><a href=#>Spock vaporizes Rock</a></li>
+          <li class="rules__element"><a href=#>Rock crushes Scissors</a></li>
+          <a
+            class="link"
+            href="https://www.youtube.com/watch?v=405Nh2H4Ucg"
+            target="”_blank”"
+            >(Rules by Sheldon Cooper)</a
+          >
         </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
-        </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
-        </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
+      </div>
+    </header>
+    
+    <main class="main">
 
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
+      <div class="score-board">
+        <div id="user-label" class="badge">player</div>
+        <div id="computer-label" class="badge">machine</div>
+        <span class="score" id="user-score">0</span>*<span class="score" id="computer-score">0</span>
+      </div>
 
-          </li>
-        </ul>
-      </main>
+      <div class="result"><p>Paper covers rock. You win!</p></div>
 
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
+      <div class="choices">
+        <div class="choice" id="r">
+          <img class="hand" src="./assets/images/rock.svg" alt="rock" />
+        </div>
+        <div class="choice" id="p">
+          <img class="hand" src="./assets/images/paper.svg" alt="paper" />
+        </div>
+        <div class="choice" id="s">
+          <img class="hand" src="./assets/images/scissors.svg" alt="scissors" />
+        </div>
+        <div class="choice" id="l">
+          <img class="hand" src="./assets/images/lizard.svg" alt="lizard" />
+        </div>
+        <div class="choice" id="k">
+          <img class="hand" src="./assets/images/spock.svg" alt="spock" />
+        </div>
+      </div>
 
-        </small>
-      </footer>
+      <h3 id="action-message">Make your move!</h3>
+    </main>
 
-    </div>
-    <script src="./assets/js/main.js"></script>
+    <script type=”text/javascript” src="../js/main.js"></script>
   </body>
 </html>
