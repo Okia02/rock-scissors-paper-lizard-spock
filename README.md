@@ -9,6 +9,7 @@ Rock, Paper, Scissors, Lizard, Spock is an expansion of Rock, Paper, Scissors cr
 Built on **node & gulp**.
 
 > [Node JS](https://nodejs.org/)
+<br>
 > Dependencies: 
 ```bash
 npm install
