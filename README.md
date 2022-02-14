@@ -1,4 +1,4 @@
-# ROCK, PAPER, SCISSORS, LIZARD, SPOCK
+## ROCK, PAPER, SCISSORS, LIZARD, SPOCK
 
 Rock, Paper, Scissors, Lizard, Spock is an expansion of Rock, Paper, Scissors created by Sam Kass and Karen Bryla. It was popularized by The Big Bang Theory TV series.
 
@@ -8,8 +8,6 @@ Rock, Paper, Scissors, Lizard, Spock is an expansion of Rock, Paper, Scissors cr
 ## What you need to run this project:
 Built on **node & gulp**.
 
-> [Node JS](https://nodejs.org/)
-<br>
 > Dependencies: 
 ```bash
 npm install
