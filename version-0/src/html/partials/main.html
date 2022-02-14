@@ -1,0 +1,62 @@
+<main class="main">
+  <div class="score-board">
+    <div id="user-label" class="badge">
+      player
+    </div>
+    <div
+      id="computer-label"
+      class="badge"
+    >
+      machine
+    </div>
+    <span class="score" id="user-score"
+      >0</span
+    >*<span
+      class="score"
+      id="computer-score"
+      >0</span
+    >
+  </div>
+  <div class="result">
+    <p></p>    
+  </div>
+
+  <div class="choices">
+    <include
+      src="./action.html"
+      id="r"
+      type="rock"
+      alt="rock"
+    ></include>
+    <include
+      src="./action.html"
+      id="p"
+      type="paper"
+      alt="paper"
+    ></include>
+    <include
+      src="./action.html"
+      id="s"
+      type="scissors"
+      alt="scissors"
+    ></include>
+    <include
+      src="./action.html"
+      id="l"
+      type="lizard"
+      alt="lizard"
+    ></include>
+    <include
+      src="./action.html"
+      id="k"
+      type="spock"
+      alt="spock"
+    ></include>
+  </div>
+  <h3 id="action-message">
+    Make your move!
+  </h3>
+<div class="reset-container">
+  <button type="reset" class="reset">Reset</button>
+</div>
+</main>

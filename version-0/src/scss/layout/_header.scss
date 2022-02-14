@@ -1,0 +1,65 @@
+.header {
+  width: 100%;
+  &__title {
+    font-family: $primaryFont;
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    color: $ndColor;
+    background-color: $backColor;
+    @media all and (min-width: 768px) {
+      font-size: 1.4rem;
+      padding: 20px;
+    }
+  }
+  &__rules {
+    height: 270px;
+    background-color: $ndColor;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .rules__pic {
+      display: none;
+      @media all and (min-width: 768px) {
+        display: flex;
+        height: 100%;
+        background-color: $ndColor;
+      }
+    }
+    .rules__text {
+      background-color: $ndColor;
+      color: $rdColor;
+      font-family: $primaryFont;
+      font-weight: 600;
+      font-size: 1.4rem;
+      line-height: 1.3;
+      text-align: center;
+    }
+    .rules__element {
+      background-color: $ndColor;
+      font-weight: 300;
+      font-size: 0.9rem;
+      transition: all 0.2s ease;
+    }
+    .rules__element > a {
+      background-color: $ndColor;
+      color: $backColor;
+      text-decoration: none;
+      :hover {
+        color: $rdColor;
+        font-weight: 600;
+        cursor: default;
+      }
+    }
+    .link {
+      background-color: $ndColor;
+      font-size: 0.7rem;
+      color: $rdColor;
+      cursor: pointer;
+    }
+  }
+}
